@@ -1,0 +1,25 @@
+.tablela {
+    width: 100%; /* Defina a largura desejada para a tabela */
+    height: 100%;
+    margin-left: 10px; /* Isso centralizará a tabela horizontalmente */
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 2%;
+    table-layout: auto;
+    align-items: center;
+    align-content: center;
+    position: relative;
+}
+table{
+    width: 80%; /* Defina a largura desejada para a tabela */
+    height: 80%;
+    margin-left: 1px; /* Isso centralizará a tabela horizontalmente */
+    align-items: center;
+    margin-left: 0%;
+    margin-top: 2%;
+    table-layout: auto;
+    align-items: center;
+    align-content: center;
+    position: relative; 
+}
+/* Adicione estilos adicionais conforme necessário */
