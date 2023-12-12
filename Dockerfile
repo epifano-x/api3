@@ -7,6 +7,7 @@ WORKDIR /app
 # Copie o package.json e o package-lock.json para o diretório de trabalho
 COPY package*.json ./
 
+RUN npm update
 # Instale as dependências
 RUN npm install
 
