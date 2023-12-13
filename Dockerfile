@@ -16,7 +16,8 @@ RUN npm install
 COPY . .
 
 # Construa o aplicativo React
-RUN npm run build
+RUN npm install -g serve
+RUN serve -s build
 
 # Expõe a porta 80 para conexões externas
 EXPOSE 3000
