@@ -90,7 +90,7 @@ const DetalhesPacote = () => {
   useEffect(() => {
     const fetchComentarios = async () => {
       try {
-        const response = await axios.get(`http://localhost:3001/nota?passeioId=${id}`);
+        const response = await axios.get(`http://api-node:3001/nota?passeioId=${id}`);
         setComentarios(response.data);
       } catch (error) {
         console.error('Erro ao obter comentários:', error);
@@ -203,7 +203,7 @@ const DetalhesPacote = () => {
   
     if (loggedIn && savedEmail && token && comentario && classificacao > 0) {
       try {
-        await axios.post('http://localhost:3001/nota', packageData, {
+        await axios.post('http://api-node:3001/nota', packageData, {
           withCredentials: true,
         });
 
