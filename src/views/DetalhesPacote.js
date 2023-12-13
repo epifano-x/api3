@@ -204,7 +204,7 @@ const DetalhesPacote = () => {
     if (loggedIn && savedEmail && token && comentario && classificacao > 0) {
       try {
         await axios.post('http://localhost:3001/nota', packageData, {
-          withCredentials: true,
+          withCredentials: false,
         });
 
         console.log('Comentário postado com sucesso!');
